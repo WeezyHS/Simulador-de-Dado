@@ -1,2 +1,2 @@
 # Simulador-de-Dado
-Um simulador de dados com interface.
+Um simulador de dado com interface Python.
