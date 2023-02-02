@@ -23,14 +23,14 @@ class SimuladorDeDado:
             if self.eventos == 'sim' or self.eventos == 's':
                 self.GerarValorDoDado()
             elif self.eventos == 'Não' or self.eventos == 'n':
-                print('Agrecemos a sua participação!')
+                print('\033[35mAgradecemos a sua participação!\033[m')
             else:
-                print('Favor digitar sim ou não')
+                print('\033[31mFavor escolher sim ou não!\033[m')
         except:
-            print('Ocorreu um erro ao receber sua resposta')
-    
+            print('\033[31mOcorreu um erro ao receber sua resposta!\033[m')
+
     def GerarValorDoDado(self):
-        print(random.randint(self.valor_minimo, self.valor_maximo))
+        print('\033[33mNúmero do dado: \033[m', random.randint(self.valor_minimo, self.valor_maximo))
 
 simulador = SimuladorDeDado()
 simulador.Iniciar()
